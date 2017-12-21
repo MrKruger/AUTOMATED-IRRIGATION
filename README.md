@@ -50,32 +50,15 @@ A9                  | Sensor de Chuva
 * **BAIXAR O PROGRAMA**: Para baixar o código, aperte o botão de download ou clone via terminal ou cmd.:
 
    ```git
-   git clone https://github.com/MrKruger/IRIS-VIRTUAL-HOME-ASSISTANT.git
+   git clone https://github.com/MrKruger/AUTOMATED-IRRIGATION.git
    ```
 
-* **BAIXAR O PYTHON**: Baixe e instale a última versão da linguagem python pelo site oficial. Não se esqueça de deixar a opção "Add Python 3.6 to PATH" marcada.: https://www.python.org/downloads/.
+* **BAIXAR O ARDUINO IDE**: Baixe e instale a última versão do Arduino IDE pelo site oficial.: https://www.arduino.cc/en/Main/Software.
 
+* **BAIXAR AS BIBLIOTECAS NECESSÁRIOAS**: Para que o programa funcione corretamente é necessária a utilização de algumas bibliotecas. Após realizar a instalação do Arduino IDE, abra o software e vá na aba Sketch/Incluir Biblioteca/Gerenciar Bibliotecas. Depois na caixa de pesquisa digite as bibliotecas utilizadas, Adafruit GFX Library, Adafruit TFT(HX8340B), DHT sensor library e DS3231. Procure uma biblioteca de cada vez clique e instale. Priorize os fornecedores de software Adafruit já que os dispositivos eletrônicos utilizados são da mesma marca.:
 
-   OBS: Iris tem uma função para enviar emails com o módulo SMTP cujo qual funcionou apenas nas versões do Python 2.7 e 3.5 (de acordo com testes realizados por mim), dessa forma, se a opção de enviar emails for desejada, é indicado que o usuário impreterívelmente baixe a versão do Python 3.5.
+* **EXECUTAR O CÓDIGO**: Após baixar e instalar o Arduino IDE juntamente com as bibliotecas necessárias, abra o Arduino IDE, vá na aba Arquivo/Abrir e procure a pasta aonde foi baixado o projeto. Depois selecione o arquivo com a extensão .ino. Agora é preciso apenas plugar o Arduino em qualquer entrada usb do computador, ir na aba Ferramentas/Placas e selecionar o seu modelo do Arduino, ir na aba Ferramentas/Porta e verificar se o Arduino foi reconhecido, depois é só clicar em Carregar.
 
-* **BAIXAR OS MÓDULOS NECESSÁRIOS**: Para que Iris funcione corretamente é necessário instalar os móduclos adicionais que estão no arquivo Requirements.txt. Para fazer isso você precisa abrir o terminal ou cmd na pasta aonde se encontra o arquivo e digitar o seguinte comando.:
-
-   ```py
-   pip install -r Requirements.txt
-   ```
-
-* **CONFIGURAR O MICROFONE**: Iris precisa de um microfone para poder ouvir e entender os comandos de voz. Como existem várias entradas e saídas de áudio no computador, é necessário que o usuário selecione qual microfone (entrada de áudio) gostaria de usar. Assim, se torna necessário executar um programa para listar as entradas e saídas de áudio disponíveis no computador aonde Iris está sendo executada. Após a executação do código, será mostrado a lista de microfones disponíveis no computador, juntamente com as saídas de áudio, então o usuário precisa copiar qual microfone deseja utilizar e colar na linha de código do programa principal "Mic_Name = "NOME QUE APARECEU NA EXECUÇÃO DO ARQUIVO IrisMicList.py". É obrigatório copiar e colar o nome exatamente igual conforme apareceu no programa e entre aspas duplas. Para rodar o código, basta executar o seguinte comando.: 
-
-   ```py
-   python IrisMicList.py
-   ```
-
-* **EXECUTAR O CÓDIGO PRINCIPAL**: Após baixar e instalar o python juntamente com os módulos necessários, abra o terminal ou o cmd e vá até a pasta aonde se encontra o código fonte já descompactado e digite.:
-
-   ```py 
-   python Iris_VHA.py
-   ```
-
-O código será executado.
+Se tudo der certo, o código será compilado e transferido para o Arduino, que logo após começará a executar o programa.
 
 É isso, boa diversão!    
