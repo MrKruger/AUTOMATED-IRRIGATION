@@ -57,7 +57,7 @@ A9                  | Sensor de Chuva
 
 * **BAIXAR AS BIBLIOTECAS NECESSÁRIOAS**: Para que o programa funcione corretamente é necessária a utilização de algumas bibliotecas. Após realizar a instalação do Arduino IDE, abra o software e vá na aba Sketch/Incluir Biblioteca/Gerenciar Bibliotecas. Depois na caixa de pesquisa digite as bibliotecas utilizadas, Adafruit GFX Library, Adafruit TFT(HX8340B), DHT sensor library e DS3231. Procure uma biblioteca de cada vez clique e instale. Priorize os fornecedores de software Adafruit já que os dispositivos eletrônicos utilizados são da mesma marca.:
 
-* **EXECUTAR O CÓDIGO**: Após baixar e instalar o Arduino IDE juntamente com as bibliotecas necessárias, abra o Arduino IDE, vá na aba Arquivo/Abrir e procure a pasta aonde foi baixado o projeto. Depois selecione o arquivo com a extensão .ino. Agora é preciso apenas plugar o Arduino em qualquer entrada usb do computador, ir na aba Ferramentas/Placas e selecionar o seu modelo do Arduino, ir na aba Ferramentas/Porta e verificar se o Arduino foi reconhecido, depois é só clicar em Carregar.
+* **EXECUTAR O CÓDIGO**: Após baixar e instalar o Arduino IDE juntamente com as bibliotecas necessárias, abra o Arduino IDE, vá na aba Arquivo/Abrir e procure a pasta aonde foi baixado o projeto. Depois selecione o arquivo Irrigation.ino. Agora é preciso apenas plugar o Arduino em qualquer entrada usb do computador, ir na aba Ferramentas/Placas e selecionar o seu modelo do Arduino, ir na aba Ferramentas/Porta e verificar se o Arduino foi reconhecido, depois é só clicar em Carregar.
 
 Se tudo der certo, o código será compilado e transferido para o Arduino, que logo após começará a executar o programa.
 
